@@ -1,0 +1,32 @@
+{
+  "name": "mooxe-docker-pptp",
+  "version": "0.0.0",
+  "description": "docker image for pptp vpn",
+  "author": "FooTearth <footearth@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mooxe000/mooxe-docker-pptp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mooxe000/mooxe-docker-pptp/issues"
+  },
+  "homepage": "https://github.com/Mooxe000/mooxe-docker-pptp",
+  "Keywords": [
+    "docker",
+    "image",
+    "pptp"
+  ],
+  "bin": {},
+  "scripts": {
+    "build": "docker build -t mooxe/pptp .",
+    "in": "docker run --privileged -it -p 1723:1723 mooxe/pptp /bin/bash",
+    "run": "docker run -p 1723:1723 mooxe/pptp",
+    "push": "docker push mooxe/pptp",
+    "test": "echo 'hello'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "shelljs": "^0.4.0"
+  }
+}
